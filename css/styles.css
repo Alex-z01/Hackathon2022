@@ -1,5 +1,4 @@
 /* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 * {
   margin: 0;
@@ -12,7 +11,7 @@ body {
 }
 
 li, a, button {
-  font-family: "Montserrat",sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: rgb(102, 101, 101);
@@ -76,6 +75,58 @@ button:hover {
   padding: 10px;
   text-align: center;
   border: 3px solid black;
+}
+
+.right-welcome {
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+  float: right;
+  border: 3px solid black;
+}
+
+.right-welcome ul{
+  list-style: none;
+}
+
+.right-welcome li {
+  padding: auto;
+  margin: 50px;
+}
+
+.modal_container {
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal_container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px 50px;
+  width: 400px;
+  height: 300px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
 }
 
 

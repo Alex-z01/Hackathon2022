@@ -27,7 +27,30 @@
 
     <div class="welcome">
       <h2>Welcome Back John Doe!</h2>
+
+      <div class="right-welcome">
+        <h3>Balance:</h3>
+        <ul>
+          <li><button id="balance">Set Balance</button></li>
+          <li><button id="modal_open">Integrate</button></li>
+        </ul>
+      </div>
     </div>
+
+    <div class="modal_container" id="modal_container">
+      <div class="modal">
+        <h1>Form</h1>
+        <form>
+          <label for="threshold">Threshold</label><br>
+          <input type="number" id="threshold" name="threshold"><br>
+          <label for="rate">Rate</label><br>
+          <input type="number" id="rate" name="rate">
+        </form>
+        <button id="modal_submit">Submit</button>
+      </div>
+    </div>
+
+    
 
     <script src="renderer.js"></script>
   </body>
