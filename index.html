@@ -6,11 +6,11 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/styles.css">
+    <title>FinGenie</title>
   </head>
   <body>
-    
     <header>
-      <img class="logo" src="images/logo.svg" alt="logo">
+      <h2 class="logo"><span style="color:antiquewhite">Fin</span>Genie</h2>
       <nav>
         <ul class="nav_links">
           <li><a href="#">Portfolio</a></li>
@@ -28,12 +28,13 @@
     <div class="welcome">
       <h2>Welcome Back John Doe!</h2>
 
+      <div class="left-welcome">
+        <img src="images/paypal.png">
+      </div>
+
       <div class="right-welcome">
-        <h3>Balance:</h3>
-        <ul>
-          <li><button id="balance">Set Balance</button></li>
-          <li><button id="modal_open">Integrate</button></li>
-        </ul>
+        <h3>Balance: $2000 (USD)</h3>
+        <button id="modal_open">Integrate</button>
       </div>
     </div>
 
@@ -48,9 +49,7 @@
         </form>
         <button id="modal_submit">Submit</button>
       </div>
-    </div>
-
-    
+    </div>    
 
     <script src="renderer.js"></script>
   </body>

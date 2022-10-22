@@ -5,6 +5,10 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+ const NOTIFICATION_TITLE = 'FinGenie - Brokerage'
+ const NOTIFICATION_BODY = 'Purchased $200 SPY ETF'
+ const CLICK_MESSAGE = 'Purchased $200 SPY ETF'
+
 const modal = document.getElementById('modal_container');
 
 document.getElementById('modal_open').addEventListener('click', async () => {
@@ -15,5 +19,11 @@ document.getElementById('modal_open').addEventListener('click', async () => {
 document.getElementById('modal_submit').addEventListener('click', async () => {
   console.log('CLOSE');
   modal.classList.remove('show');
+
+  new Notification(NOTIFICATION_TITLE, { body: NOTIFICATION_BODY }).onclick = () => document.getElementById("output").innerText = CLICK_MESSAGE
 })
+
+
+
+
 
